@@ -512,3 +512,12 @@ body, html {
 .cleanzoom:hover {
   transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
+
+.microzoom {  
+  transition: transform .2s; /* Animation */  
+  margin: 0 auto;
+}
+
+.microzoom:hover {
+  transform: scale(1.03); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
