@@ -125,7 +125,7 @@ body, html {
   
  /* HERO IMAGE */
  .hero-image {
-  background-image: url("https://i.ibb.co/tQGpGhk/backbanner1.png");
+  background-image: url("https://i.ibb.co/wJ74k0z/hero.png");
   /* Set a specific height */
   height: 80%;
   width: 100%;
@@ -140,14 +140,18 @@ body, html {
 
 }
 .hero-text{
-  text-align: left;
-  position: absolute;  
-  left: 61px;
-  top: 220px;
+  text-align: right;
+  position: absolute;
+  min-width: 671px;
+  height: 192px;
+  left: 750px;
+  top: 280px;
   justify-content: center;
   align-items: center;
   padding: 20px 60px;
   color: #FFFFFF;
+
+  
 }
 .hero-text .h1{
   font-family: 'DM Serif Display';
@@ -155,8 +159,6 @@ body, html {
   font-weight: regular;  
   letter-spacing:0;  
 }
-
-
 
 .hero-text .bg-color-yellow{
   border-radius: 100px;
@@ -175,7 +177,7 @@ body, html {
   width: 470px;
   height: 90x;
   left: 61px;
-  top: 290px;
+  top: 180px;
 
   font-size: 25px;
   font-style: normal;
@@ -184,13 +186,7 @@ body, html {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.hero-text .bg-color-yellow .icon_wing{  
-  margin-left: 10px;
-  margin-bottom: 10px; 
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
+
 .about-container{
   display: flex;
   flex-direction: column;
@@ -227,6 +223,7 @@ body, html {
 }
 .row {  
   width: 100%;
+  margin-top: 100px;
 }
 /* Clear floats after the columns */
 .row:after {  
@@ -248,20 +245,15 @@ body, html {
   font-family: 'Capriola';
   font-size: 30px;
   color: #575756;
-  background:
-  radial-gradient(farthest-side, #00A5DF 98%,transparent 50%) bottom right/5px 5px,
-  radial-gradient(farthest-side, #00A5DF 98%,transparent 50%) bottom left /5px 5px,
-  linear-gradient(#00A5DF,#00A5DF) bottom/calc(100% - 5px) 5px;
-  background-repeat:no-repeat;
   justify-content: center;
   align-items: center;
   text-align: center;
   position: static;
-  margin: 90px 0px;
+  margin: 50px 0px;
 }
 .block .text{
   font-family: 'Capriola';
-  color: #575756;
+  color: #71DBD4;
   font-size: 25px;
     
   justify-content: center;
@@ -270,9 +262,10 @@ body, html {
 
   position: static;
 
-  margin: -55px 0px;
+  margin: -45px 0px;
 }
 .do-container{
+  background-color: #00A5DF;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -281,16 +274,16 @@ body, html {
   top: 0px;
   flex: none;
   order: 0;
-  flex-grow: 0;
-  margin: 0px;
+  flex-grow: 0;    
 
-  margin: 50px auto;
+  margin: 220px auto;
   width: 100%;  
   padding: 10px;
+  height: 800px;
 }
 .do-container .h1{
   position: static;
-  margin-top: 150px;
+  margin-top: -10px;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -298,9 +291,9 @@ body, html {
   font-family: 'DM Serif Display';
   font-style: normal;
   font-weight: normal;
-  font-size: 50px;
+  font-size: 80px;
   line-height: 86px;
-  color: #00A5DF;
+  color: #FFFFFF;
 }
 .btn-color-blue{
   border-radius: 100px;
@@ -327,33 +320,33 @@ body, html {
   content: "";
   display: table;
   clear: both;
-  width: 75%;
-}
-.do-container .row3{
-  content: "";
-  display: table;
-  clear: both;
-  width: 60%;
+  width: 90%;
 }
 .do-container .row4 .column{
   float: left;
   width: 25%;
-  margin-top: 100px;
-}
-.do-container .row3 .column{
-  float: left;
-  width: 33.33%;
-  margin-top: 100px;
+  margin-top: 120px;
 }
 .do-container .row4 .block .title2{
   font-family: 'Capriola';
-  color: #575756;
-  font-size: 20px;
+  color: #FFFFFF;
+  font-size: 30px;
   justify-content: center;
   align-items: center;
   text-align: center;
   position: static;
   margin: 20px 0px;
+}
+.do-container .row4 .block .subtitle{
+  font-family: 'Capriola';
+  color: #F9E547;
+  font-size: 20px;
+  text-decoration: underline;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: static;
+  margin: 0px 0px;
 }
 .do-container .row4 .block .icon_do{
   width: 150px;
@@ -381,52 +374,6 @@ body, html {
   text-align: center;
   position: static;  
 }
-.insta-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: static;
-  top: 0px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 0px;
-
-  margin: 50px auto;
-  width: 100%;  
-  padding: 10px;
-}
-.insta-container .h1{
-  position: static;
-  margin-top: 150px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  /* Header/H1 */  
-  font-family: 'DM Serif Display';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 35px;
-  line-height: 86px;
-  color: #00A5DF;
-}
-.insta-container .row4{
-  margin-top: -50px;
-  content: "";
-  display: table;
-  clear: both;
-  width: 90%;
-}
-.insta-container .row4 .column{
-  float: left;
-  width: 25%;
-  margin-top: 100px;
-  margin-left: 0px;
-  margin-right: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-}
  /* HERO IMAGE */
  .hero-image-back {
   background-image: url("https://i.ibb.co/7rV6cTd/about-galeria.png");
@@ -440,7 +387,7 @@ body, html {
   position: relative;  
   min-width: 1440px;
   min-height: 657px;
-  top: 229px;
+  top: -220px;
   
 }
 .hero-image-back .hero-text{
