@@ -323,6 +323,11 @@ body, html {
   text-transform: uppercase;  
   margin-top: 75px;
 }
+
+.insta-container .btn-color-blue{
+  margin-top: 115px;
+}
+
 .do-container .row4{
   content: "";
   display: table;
@@ -478,7 +483,7 @@ body, html {
   position: absolute;
   width: 470px;
   height: 90x;
-  top: 290px;
+  top: 260px;
 
   font-size: 25px;
   font-style: normal;
